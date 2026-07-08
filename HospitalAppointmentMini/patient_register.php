@@ -1,0 +1,2 @@
+<?php include 'config/db.php'; if($_POST){mysqli_query($conn,"INSERT INTO patients(name,email) VALUES('".$_POST['name']."','".$_POST['email']."')"); echo 'Registered';} ?>
+<form method='post'><input name='name' placeholder='Name'><input name='email' placeholder='Email'><button>Register</button></form>

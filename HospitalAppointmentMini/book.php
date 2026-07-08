@@ -1,0 +1,2 @@
+<?php include 'config/db.php'; if($_POST){mysqli_query($conn,"INSERT INTO appointments(patient_name,doctor,appointment_date) VALUES('".$_POST['patient']."','".$_POST['doctor']."','".$_POST['date']."')"); echo 'Booked';} ?>
+<form method='post'><input name='patient' placeholder='Patient'><input name='doctor' placeholder='Doctor'><input type='date' name='date'><button>Book</button></form>
